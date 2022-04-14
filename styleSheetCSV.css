@@ -1,0 +1,79 @@
+body{
+    display: grid;
+    grid-template-rows: 100px 100px 450px 1fr;
+    grid-template-areas: 
+    "header"
+    "content"
+    "dtable"
+    "footer";
+}
+
+.csv-header-area{
+    display: grid;
+    grid-area: header;
+}
+
+.csv-content-area{
+    display: grid;
+    grid-area: content;
+    grid-template-rows: 50px 50px;
+    grid-template-areas: 
+    "sbmt"
+    "button";
+}
+
+.csv-form-area{
+    display: grid;
+    grid-area: sbmt;
+}
+
+.csv-fbutton-area{
+    display: grid;
+    grid-area: button;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 10px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "sbutton rbutton";
+}
+
+.submit-button{
+    display: grid;
+    grid-area: sbutton;
+}
+
+.reset-button{
+    display: grid;
+    grid-area: rbutton;
+}
+
+.csv-table-area{
+    display: grid;
+    grid-area: dtable;
+    background-color: crimson;
+}
+
+.csv-footer-area{
+    display: grid;
+    grid-area: footer;
+    grid-template-columns: 125px 50px 100px 50px 125px;
+    grid-template-areas: 
+    "mp . pp . fp";
+}
+
+.manual-page-button{
+    display: grid;
+    grid-area: mp;
+}
+
+.process-page-button{
+    display: grid;
+    grid-area: pp;
+}
+
+.forecasting-page-button{
+    display: grid;
+    grid-area: fp;
+}
+
+
