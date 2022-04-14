@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas: 
+    "header header"
+    "content content";
+}
+
+.process-header-area{
+    display: grid;
+    grid-area: header;
+} 
+
+.process-content-area{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "nav dtable";
+}
+
+.process-page-nav{
+    display: grid;
+    grid-area: nav;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "btn"
+    ".";
+}
+
+.nav-button{
+    display: grid;
+    grid-area: btn;
+}
+
+.process-data-area{
+    display: grid;
+    grid-area: dtable;
+    grid-template-rows: 25px 600px;
+    grid-template-areas: 
+    "tentry"
+    "etbl";
+}
+
+.process-data-table{
+    display: grid;
+    grid-area: etbl;
+}
