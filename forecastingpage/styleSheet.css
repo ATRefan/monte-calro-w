@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas: 
+    "header header"
+    "content content";
+}
+
+.forecasting-header-area{
+    display: grid;
+    grid-area: header;
+}
+
+.forecasting-content-area{
+    display: grid;
+    grid-area: content;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "nav dtable";
+}
+
+.forecasting-page-nav{
+    display: grid;
+    grid-area: nav;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "btn"
+    ".";
+}
+
+.nav-button{
+    display: grid;
+    grid-area: btn;
+}
+
+
+
